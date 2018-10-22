@@ -4,7 +4,7 @@ services:
     image: jupyter/base-notebook
     container_name: jupyter-notebook
     ports:
-      - "8888:8888"
+      - "7777:8888"
     volumes:
-      - ./work:/home/jack/work/
+      - ./work/:/home/jovyan/work/
     command: start-notebook.sh --NotebookApp.token=''
